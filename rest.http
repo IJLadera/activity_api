@@ -1,0 +1,167 @@
+#####################
+###### COVID ########
+#####################
+
+### Create covid
+POST http://localhost:3000/covid
+Content-Type: application/json
+
+{
+    "firstName": "Christian Jericho",
+    "middleName": "A.",
+    "lastName": "Dacoroon",
+    "address": "Barangay Sta Ana",
+    "birthDate": "2003-01-04",
+    "age": 21,
+    "vaccinated": true,
+    "dateCreated": "2023-09-23"
+}
+
+#### Get all covid
+GET http://localhost:3000/covid
+
+#### Get specific covid
+GET http://localhost:3000/covid/65f2ad8d326efac225347c7c
+
+#### Delete specific covid
+DELETE  http://localhost:3000/covid/65f2ad8d326efac225347c7c
+
+#### Update specific covid
+PATCH   http://localhost:3000/covid/65f2ad8d326efac225347c7c
+Content-Type: application/json
+
+{
+    "firstName": "Christian Kent",
+    "middleName": "C.",
+    "lastName": "Natividad",
+    "address": "Baranga Lumbia",
+    "birthDate": "2000-09-23",
+    "age": 32,
+    "vaccinated": false,
+    "dateCreated": "2020-09-23"
+}
+
+
+###############################################################################################################################
+
+
+#####################
+###### Nurse Info ########
+#####################
+
+### Create nurse
+POST http://localhost:3000/nurse
+Content-Type: application/json
+
+{
+    "firstName": "mother nurse",
+    "middleName": "mname",
+    "lastName": "lname",
+    "address": "barangay palahubog",
+    "birthDate": "1998-09-23",
+    "age": 200,
+    "licenseNumber": 2021300656,
+    "vaccinated": true,
+    "dateCreated": "1998-09-23"
+}
+
+#### Get all nurse
+GET http://localhost:3000/nurse
+
+#### Get specific nurse
+GET http://localhost:3000/nurse/65f2b0eb4cfbed61bbdc19a9
+
+#### Delete specific nurse
+DELETE  http://localhost:3000/nurse/65f2b0f34cfbed61bbdc19ab
+
+#### Update specific nurse
+PATCH   http://localhost:3000/nurse/65f2b0f94cfbed61bbdc19ad
+Content-Type: application/json
+
+{
+    "firstName": "Mother earth nurse",
+    "middleName": "mname",
+    "lastName": "lname",
+    "address": "barangay palahubog",
+    "birthDate": "1998-09-23",
+    "age": 200,
+    "licenseNumber": 2021300656,
+    "vaccinated": true,
+    "dateCreated": "1998-09-23"
+}
+
+
+###############################################################################################################################
+
+
+#####################
+###### Hospital ########
+#####################
+
+### Create hospital
+POST http://localhost:3000/hospital
+Content-Type: application/json
+
+{
+    "brand": "Diabeties",
+    "quanti": 10000,
+    "checkedBy": "Dr Johnny",
+    "dateChecked": "1998-09-23",      
+    "dateCreated":"3000-09-23"
+}
+
+#### Get all hospital
+GET http://localhost:3000/hospital
+
+#### Get specific hospital
+GET http://localhost:3000/hospital/65f2b12c4cfbed61bbdc19b6
+
+#### Delete specific hospital
+DELETE  http://localhost:3000/hospital/65f2b1384cfbed61bbdc19ba
+
+#### Update specific hospital
+PATCH   http://localhost:3000/hospital/65f2b1384cfbed61bbdc19ba
+Content-Type: application/json
+
+{
+    "brand": "Goods na almoranas",
+    "quanti": 10000,
+    "checkedBy": "Dr Johnny",
+    "dateChecked": "1998-09-23",      
+    "dateCreated":"3000-09-23"
+}
+
+##############################################
+########EMPLOYEE##############################
+
+### Create hospital
+POST http://localhost:3000/employee
+Content-Type: application/json
+
+{
+    "id":100 ,
+    "fname": "oivan",
+    "mname": "",
+    "lname": "Ladera"
+}
+
+###GET ALL EMPLOYEE
+GET http://localhost:3000/employee
+
+###GET SPECIFIC EMPLOYEE
+GET http://localhost:3000/employee
+
+#### Delete specific employee
+DELETE  http://localhost:3000/employee
+
+#### Update specific employee
+PATCH   http://localhost:3000/employee
+Content-Type: application/json
+
+{
+    "brand": "Goods na almoranas",
+    "quanti": 10000,
+    "checkedBy": "Dr Johnny",
+    "dateChecked": "1998-09-23",      
+    "dateCreated":"3000-09-23"
+}
